@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags: Entscheidend für Google -->
+    <title>Maurer & Fliesenleger Nordhorn | Eduard Saam | Klinker & Fugen</title>
+    <meta name="description" content="Ihr erfahrener Maurer und Fliesenleger in Nordhorn. Eduard Saam ist Ihr lokaler Profi für Klinkermauerwerk, Fugarbeiten, Eisenflechterei & Badsanierung. Jetzt unverbindlich anfragen!">
+    <meta name="keywords" content="Maurer Nordhorn, Fliesenleger Nordhorn, Klinker Nordhorn, Fugarbeiten, Fuger, Eisenflechter, Badsanierung Grafschaft Bentheim, Bauunternehmen Nordhorn, Handwerker Nordhorn">
+    <meta name="author" content="Eduard Saam">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.maurer-saam-nordhorn.de/"> <!-- Später die echte Domain eintragen -->
+
+    <!-- Favicon (Platzhalter) -->
+    <link rel="icon" href="https://placehold.co/32x32/1e3a8a/ffffff?text=S" type="image/png">
+
+    <!-- Tailwind CSS for Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Markup for Local SEO (WICHTIG!) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Eduard Saam Maurer & Fliesenleger",
+      "image": "https://placehold.co/1200x630/cccccc/333333?text=Eduard+Saam+-+Maurer+%26+Fliesenleger",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Musterstraße 1",
+        "addressLocality": "Nordhorn",
+        "postalCode": "48527",
+        "addressRegion": "Niedersachsen",
+        "addressCountry": "DE"
+      },
+      "telephone": "+495921123456",
+      "priceRange": "€€",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "52.4346",
+        "longitude": "7.0722"
+      },
+      "url": "https://www.maurer-saam-nordhorn.de",
+      "hasOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Maurerarbeiten, Fliesenlegerarbeiten, Fugarbeiten, Eisenflechterarbeiten"
+        }
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Nordhorn"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Grafschaft Bentheim"
+        },
+        {
+          "@type": "City",
+          "name": "Lingen"
+        },
+        {
+          "@type": "City",
+          "name": "Schüttorf"
+        },
+        {
+          "@type": "City",
+          "name": "Bad Bentheim"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('https://placehold.co/1920x1080/cccccc/333333?text=Hochwertige+Klinkerwand');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold text-blue-900">
+                Eduard Saam <span class="block text-sm font-normal text-gray-600">Maurer & Fliesenleger</span>
+            </a>
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="#leistungen" class="text-gray-600 hover:text-blue-800">Leistungen</a>
+                <a href="#projekte" class="text-gray-600 hover:text-blue-800">Projekte</a>
+                <a href="#ueber-mich" class="text-gray-600 hover:text-blue-800">Über Mich</a>
+                <a href="#kontakt" class="bg-blue-700 text-white px-4 py-2 rounded-md hover:bg-blue-800 transition-colors">Kontakt</a>
+            </nav>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <a href="#leistungen" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Leistungen</a>
+            <a href="#projekte" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Projekte</a>
+            <a href="#ueber-mich" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Über Mich</a>
+            <a href="#kontakt" class="block py-2 px-6 text-sm text-gray-600 hover:bg-gray-100">Kontakt</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white">
+            <div class="container mx-auto px-6 py-24 md:py-32 text-center md:text-left">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Eduard Saam: Ihr Maurer und Fliesenleger<br>für Nordhorn & die Grafschaft Bentheim.</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto md:mx-0">Meisterhafte Qualität, Zuverlässigkeit und ein lokaler Ansprechpartner für Ihr Bauvorhaben.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start mb-12">
+                     <div class="flex items-center gap-2 bg-white/20 px-4 py-2 rounded-md"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-300" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Meisterqualität aus der Region</div>
+                    <div class="flex items-center gap-2 bg-white/20 px-4 py-2 rounded-md"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-300" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Zuverlässig & Termintreu</div>
+                    <div class="flex items-center gap-2 bg-white/20 px-4 py-2 rounded-md"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-300" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Kostenlose Erstberatung</div>
+                </div>
+                <a href="#kontakt" class="bg-blue-700 text-white font-bold py-3 px-8 rounded-md hover:bg-blue-800 transition-colors text-lg">Jetzt Angebot anfordern</a>
+            </div>
+        </section>
+
+        <!-- Leistungen Teaser -->
+        <section id="leistungen" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Meine Leistungen für die Region Nordhorn</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Als Ihr lokaler Handwerksbetrieb biete ich Ihnen umfassende Leistungen rund um Mauer, Fuge und Fliese. Qualität und saubere Arbeit stehen für mich an erster Stelle.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service 1: Klinker -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/cccccc/333333?text=Perfekte+Klinker-Ecke" alt="Professionelle Klinkerarbeiten in Nordhorn" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Maurerarbeiten & Klinker</h3>
+                            <p class="text-gray-600 mb-4">Vom klassischen Einfamilienhaus bis zur exklusiven Klinkerfassade – für ein langlebiges und schönes Zuhause.</p>
+                            <a href="#maurer" class="font-semibold text-blue-700 hover:text-blue-900">Mehr erfahren &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Service 2: Fliesenleger -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/cccccc/333333?text=Modernes+Fliesenbad" alt="Moderne Fliesenarbeiten für Bäder in Nordhorn" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Fliesenlegerarbeiten</h3>
+                            <p class="text-gray-600 mb-4">Moderne Bäder, robuste Böden und individuelle Mosaike. Präzise verlegt für ein perfektes Ergebnis.</p>
+                            <a href="#fliesenleger" class="font-semibold text-blue-700 hover:text-blue-900">Mehr erfahren &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Service 3: Fuger -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/cccccc/333333?text=Saubere+Fuge" alt="Professionelle Fugarbeiten in der Grafschaft Bentheim" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Fugarbeiten & Sanierung</h3>
+                            <p class="text-gray-600 mb-4">Professionelle Neuverfugung und Sanierung für eine langlebige Optik und Schutz Ihrer Fassade.</p>
+                            <a href="#fuger" class="font-semibold text-blue-700 hover:text-blue-900">Mehr erfahren &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Service 4: Eisenflechter -->
+                    <div class="bg-gray-50 rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/cccccc/333333?text=Stabile+Bewehrung" alt="Eisenflechter für ein stabiles Fundament in Nordhorn" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-blue-900 mb-2">Eisenflechterarbeiten</h3>
+                            <p class="text-gray-600 mb-4">Das stabile Fundament für Ihr Bauvorhaben. Präzise und nach Plan für maximale Sicherheit.</p>
+                            <a href="#eisenflechter" class="font-semibold text-blue-700 hover:text-blue-900">Mehr erfahren &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Detailed Service Sections -->
+        <section id="maurer" class="py-20">
+            <div class="container mx-auto px-6">
+                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-8 text-center">Maurerarbeiten & Klinkermauerwerk in Nordhorn</h2>
+                 <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">Eine fachmännisch errichtete Mauer ist das Herzstück jedes soliden Bauwerks. Besonders hier in der Region Nordhorn sind hochwertige Klinkerfassaden nicht nur traditionell, sondern auch ein Zeichen für Qualität und Beständigkeit. Ich sorge dafür, dass Ihr Projekt auf einem soliden Fundament steht und optisch überzeugt.</p>
+                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg mb-12">
+                     <li class="flex items-start gap-3"><svg class="w-6 h-6 text-blue-700 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> <span>Klinkerfassaden & Verblendmauerwerk</span></li>
+                     <li class="flex items-start gap-3"><svg class="w-6 h-6 text-blue-700 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> <span>Sichtmauerwerk für Innen & Außen</span></li>
+                     <li class="flex items-start gap-3"><svg class="w-6 h-6 text-blue-700 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> <span>Reparatur & Sanierung von Mauerwerk</span></li>
+                     <li class="flex items-start gap-3"><svg class="w-6 h-6 text-blue-700 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> <span>Erstellen tragender & nicht-tragender Wände</span></li>
+                 </ul>
+            </div>
+        </section>
+
+        <section id="fliesenleger" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-8 text-center">Präzise Fliesenlegerarbeiten in Nordhorn</h2>
+                 <p class="text-center text-gray-600 max-w-3xl mx-auto mb-12">Ob Traumbad, langlebiger Küchenboden oder einladender Eingangsbereich – professionell verlegte Fliesen werten jeden Raum auf. Ich berate Sie bei der Auswahl der Materialien und sorge für eine millimetergenaue Verlegung, damit Sie lange Freude an Ihrem neuen Boden oder Ihrer neuen Wand haben.</p>
+                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 text-lg mb-12">
+                     <li class="flex items-start gap-3"><svg class="w-6 h-6 text-blue-700 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> <span>Komplette Badsanierung</span></li>
+                     <li class="flex items-start gap-3"><svg class="w-6 h-6 text-blue-700 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> <span>Verlegung von Boden- & Wandfliesen</span></li>
+                     <li class="flex items-start gap-3"><svg class="w-6 h-6 text-blue-700 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> <span>Großformatige Fliesen & Mosaikarbeiten</span></li>
+                     <li class="flex items-start gap-3"><svg class="w-6 h-6 text-blue-700 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> <span>Barrierefreie Duschen & Bäder</span></li>
+                 </ul>
+            </div>
+        </section>
+
+        <!-- Placeholder for Fuger & Eisenflechter. Can be added with the same structure -->
+        <section id="fuger" class="py-2"></section>
+        <section id="eisenflechter" class="py-2"></section>
+
+        <!-- Über Mich / Trust Section -->
+        <section id="ueber-mich" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3">
+                        <img src="https://placehold.co/600x700/1e3a8a/ffffff?text=Eduard+Saam" alt="Portrait von Eduard Saam, Maurer und Fliesenleger aus Nordhorn" class="rounded-lg shadow-2xl w-full">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Ihr Vorteil: Handwerk aus Nordhorn</h2>
+                        <h3 class="text-xl font-semibold text-gray-700 mb-6">Eduard Saam – Ihr persönlicher Ansprechpartner.</h3>
+                        <p class="mb-4 text-gray-600">Mit über 15 Jahren Erfahrung im Handwerk bin ich, Eduard Saam, Ihr verlässlicher Partner für Bauprojekte in Nordhorn und Umgebung. Ich bin hier aufgewachsen und kenne die regionalen Gegebenheiten und die Wünsche der Menschen in der Grafschaft Bentheim. Für mich zählt nicht die schnelle Abfertigung, sondern ehrliche, saubere Arbeit, auf die Sie und ich stolz sein können.</p>
+                        <p class="mb-4 text-gray-600"><strong>Meine Philosophie ist einfach:</strong> Ich behandle jedes Projekt so, als wäre es mein eigenes. Das bedeutet höchste Sorgfalt bei der Ausführung, Pünktlichkeit, transparente Kommunikation und faire Preise. Als Ihr direkter Ansprechpartner von der ersten Beratung bis zur finalen Abnahme garantiere ich Ihnen kurze Wege und schnelle Entscheidungen.</p>
+                        <p class="text-gray-600">Profitieren Sie von meiner Expertise in mehreren Gewerken. Ob Fundament, Mauerwerk oder das finale Badezimmer – bei mir bekommen Sie alles aus einer meisterhaften Hand.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projekte / Referenzen -->
+        <section id="projekte" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Projekte in Nordhorn und Umgebung</h2>
+                    <p class="text-gray-600 mt-2 max-w-2xl mx-auto">Bilder sagen mehr als tausend Worte. Sehen Sie hier eine Auswahl meiner abgeschlossenen Arbeiten.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/600x400/cccccc/333333?text=Projekt+1" alt="Klinkerfassade in Nordhorn-Bookholt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-bold">Klinkerfassade, Nordhorn-Bookholt</h3>
+                            <p class="text-sm text-gray-600">Neubau eines Einfamilienhauses.</p>
+                        </div>
+                    </div>
+                    <div class="group rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/600x400/cccccc/333333?text=Projekt+2" alt="Badsanierung in Lingen" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-bold">Badsanierung, Lingen</h3>
+                            <p class="text-sm text-gray-600">Komplettsanierung mit großformatigen Fliesen.</p>
+                        </div>
+                    </div>
+                    <div class="group rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://placehold.co/600x400/cccccc/333333?text=Projekt+3" alt="Fugensanierung in Schüttorf" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-300">
+                        <div class="p-4 bg-gray-50">
+                            <h3 class="font-bold">Fugensanierung, Schüttorf</h3>
+                            <p class="text-sm text-gray-600">Erneuerung der Fugen an einem Altbau.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900">Das sagen Kunden aus der Region</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <p class="text-gray-600 mb-4">"Herr Saam hat unsere Klinkerfassade in Nordhorn-Blanke saniert. Super Arbeit, absolut zuverlässig und sehr freundlich. Das Ergebnis ist top. Klare Empfehlung von uns!"</p>
+                        <p class="font-bold text-gray-800">- Familie K., Nordhorn</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <p class="text-gray-600 mb-4">"Für unsere Badsanierung war Herr Saam die beste Wahl. Von der Planung bis zur letzten Fuge lief alles perfekt. Wir sind begeistert von unserem neuen Bad."</p>
+                        <p class="font-bold text-gray-800">- M. Weber, Bad Bentheim</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt & Einzugsgebiet -->
+        <section id="kontakt" class="py-20 bg-blue-900 text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold">Kontakt & Anfrage für Ihr Projekt</h2>
+                    <p class="text-blue-200 mt-2 max-w-2xl mx-auto">Ich freue mich auf Ihr Projekt. Rufen Sie mich an oder schreiben Sie mir eine Nachricht für eine kostenlose und unverbindliche Erstberatung.</p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-12">
+                    <!-- Contact Info & Area -->
+                    <div class="md:w-1/2">
+                        <h3 class="text-2xl font-bold mb-4">Eduard Saam Maurer & Fliesenleger</h3>
+                        <p class="mb-2">Musterstraße 1 <br> 48527 Nordhorn</p>
+                        <p class="mb-4">
+                            Telefon: <a href="tel:+495921123456" class="hover:underline">05921 / 123 456</a><br>
+                            E-Mail: <a href="mailto:info@maurer-saam-nordhorn.de" class="hover:underline">info@maurer-saam-nordhorn.de</a>
+                        </p>
+                        <h4 class="text-xl font-bold mt-8 mb-4">Mein Einzugsgebiet:</h4>
+                        <p class="text-blue-200">Ich bin für Sie im Einsatz in ganz <strong class="text-white">Nordhorn</strong> (alle Stadtteile wie Blanke, Bookholt, Stadtflur), <strong class="text-white">Lingen</strong>, <strong class="text-white">Bad Bentheim</strong>, <strong class="text-white">Schüttorf</strong>, <strong class="text-white">Neuenhaus</strong>, <strong class="text-white">Uelsen</strong> und der gesamten <strong class="text-white">Grafschaft Bentheim</strong>.</p>
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="md:w-1/2 bg-white text-gray-800 p-8 rounded-lg shadow-2xl">
+                        <form action="#" method="POST">
+                            <div class="mb-4">
+                                <label for="name" class="block text-sm font-bold mb-2">Name</label>
+                                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-sm font-bold mb-2">E-Mail</label>
+                                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            </div>
+                             <div class="mb-4">
+                                <label for="phone" class="block text-sm font-bold mb-2">Telefon (für Rückfragen)</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-sm font-bold mb-2">Ihre Nachricht</label>
+                                <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-blue-700 text-white font-bold py-3 px-4 rounded-md hover:bg-blue-800 transition-colors">Anfrage senden</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2024 Eduard Saam Maurer & Fliesenleger</p>
+                <div class="mt-4 md:mt-0">
+                    <a href="#" class="px-3 hover:text-white">Impressum</a>
+                    <a href="#" class="px-3 hover:text-white">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                 document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
